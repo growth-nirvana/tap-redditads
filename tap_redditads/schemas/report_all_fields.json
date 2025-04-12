@@ -1,0 +1,397 @@
+{
+   "type": "object",
+   "properties": {
+     "campaign_id": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "date": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "account_id": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "ad_create_time": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "ad_effective_status": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "ad_group_id": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "ad_id": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "ad_update_time": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "adgroup_create_time": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "adgroup_update_time": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "impressions": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "keyword": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "placement": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "post_id": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "reach": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "reddit_leads": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "region": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "spend": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "video_viewable_impressions": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "engaged_click": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "key_conversion_clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "key_conversion_ecpa": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "key_conversion_rate": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "key_conversion_total_count": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "key_conversion_views": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "cpc": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "country": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "cpv": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "ctr": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "frequency": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "datetime": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "ecpm": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_sign_up_views": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_roas": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_signup_avg_value": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_signup_total_value": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_view_content_clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_view_content_ecpa": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_view_content_views": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_lead_avg_value": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_lead_clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_lead_ecpa": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_lead_total_value": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_lead_views": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_page_visit_clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_page_visit_ecpa": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_page_visit_views": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "community": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "campaign_update_time": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "campaign_create_time": {
+       "type": [
+         "string",
+         "null"
+       ],
+       "format": "date-time"
+     },
+     "bid_strategy": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "dma": {
+       "type": [
+         "string",
+         "null"
+       ]
+     },
+     "conversion_purchase_total_value": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_purchase_views": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_search_clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_search_ecpa": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_search_views": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_sign_up_clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_purchase_avg_value": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_purchase_clicks": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_purchase_ecpa": {
+       "type": [
+         "number",
+         "null"
+       ]
+     },
+     "conversion_purchase_total_items": {
+       "type": [
+         "integer",
+         "null"
+       ]
+     },
+     "conversion_sign_up_ecpa": {
+       "type": [
+         "number",
+         "null"
+       ]
+     }
+   }
+ }

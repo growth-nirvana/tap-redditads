@@ -1,0 +1,69 @@
+version: 1
+send_anonymous_usage_stats: true
+project_id: "tap-redditads"
+default_environment: test
+venv:
+  backend: uv
+environments:
+- name: test
+plugins:
+  extractors:
+  - name: "tap-redditads"
+    namespace: "tap_redditads"
+    pip_url: -e .
+    capabilities:
+    - state
+    - catalog
+    - discover
+    - about
+    - stream-maps
+
+    settings:
+    - name: account_id
+      kind: password
+      label: Account_ID
+      description: Account ID for Reddit Ads API.
+      sensitive: true
+
+    - name: client_id
+      kind: password
+      label: Client_ID
+      description: Client ID for Reddit Ads API.
+      sensitive: true
+
+    - name: client_secret
+      kind: password
+      label: Client_Secret
+      description: Client Secret for Reddit Ads API.
+      sensitive: true
+
+    - name: refresh_token
+      kind: password
+      label: Refresh_Token
+      description: Refresh token for Reddit Ads API.
+      sensitive: true
+
+    - name: user_agent
+      label: User_Agent
+      description: A custom User-Agent header to send with each request. Format is {{Target platform}}:{{Unique app ID}}:{{Version string}} (by /u/{{Your Reddit username}}).
+
+    - name: start_date
+      kind: date_iso8601
+      label: Start Date
+      description: Initial date to start extracting data from
+
+    settings_group_validation:
+    - [account_id, client_id, client_secret, refresh_token, user_agent]
+
+    config:
+      start_date: '2021-01-01'
+      account_id: $REDDIT_ADS_ACCOUNT_ID
+      client_id: $REDDIT_ADS_CLIENT_ID
+      client_secret: $REDDIT_ADS_CLIENT_SECRET
+      refresh_token: $REDDIT_ADS_REFRESH_TOKEN
+      user_agent: $REDDIT_ADS_USER_AGENT
+
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
