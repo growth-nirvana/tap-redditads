@@ -19,13 +19,11 @@ class TapRedditAds(Tap):
             th.StringType,
             required=True,
             secret=True,
-            title="Account ID",
             description="Account ID for Reddit Ads API.",
         ),
         th.Property(
             "api_url",
             th.StringType,
-            title="API URL",
             default="https://ads-api.reddit.com/api/v3/ad_accounts",
             description="URL for Reddit Ads API.",
         ),
@@ -34,7 +32,6 @@ class TapRedditAds(Tap):
             th.StringType,
             required=True,
             secret=True,
-            title="Client ID",
             description="Client ID for Reddit Ads API.",
         ),
         th.Property(
@@ -42,14 +39,12 @@ class TapRedditAds(Tap):
             th.StringType,
             required=True,
             secret=True,
-            title="Client Secret",
             description="Client Secret for Reddit Ads API.",
         ),
         th.Property(
             "refresh_token",
             th.StringType,
             required=True,
-            title="Refresh Token.",
             description="Refresh token for Reddit Ads API.",
         ),
         th.Property(
