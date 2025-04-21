@@ -3,7 +3,7 @@ name = "tap-redditads"
 version = "0.0.1"
 description = "Singer tap for RedditAds, built with the Meltano Singer SDK."
 readme = "README.md"
-authors = [{ name = "Ella Runciman", email = "ella.runciman@agielbits.com" }]
+authors = [{ name = "Ella Runciman", email = "ella.runciman@agilebits.com" }]
 keywords = [
     "ELT",
     "RedditAds",
