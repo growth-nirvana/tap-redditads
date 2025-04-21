@@ -34,6 +34,7 @@ Built with the [Meltano Singer SDK](https://sdk.meltano.com).
 
 ## Supported Python Versions
 
+* 3.8
 * 3.9
 * 3.10
 * 3.11
@@ -105,7 +106,7 @@ Follow these instructions to contribute to this project.
 
 Prerequisites:
 
-- Python 3.9+
+- Python 3.8+
 - [uv](https://docs.astral.sh/uv/)
 
 ```bash

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import sys
 import typing as t
 from datetime import datetime, timedelta
 import dateutil.parser
@@ -11,7 +12,12 @@ from importlib import resources
 from singer_sdk import typing as th  # JSON Schema typing helpers
 from tap_redditads.client import RedditAdsStream
 
-SCHEMAS_DIR = resources.files(__package__) / "schemas"
+if sys.version_info >= (3, 9):
+    import importlib.resources as importlib_resources
+else:
+    import importlib_resources
+
+SCHEMAS_DIR = importlib_resources.files(__package__) / "schemas"
 
 def normalize_timestamp(ts_str):
     # Parse the timestamp (handles both full datetime and date-only strings)
