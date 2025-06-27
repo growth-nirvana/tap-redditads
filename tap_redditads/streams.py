@@ -107,11 +107,49 @@ class ReportCampaignDateStream(RedditAdsStream):
             record["metrics_updated_at"] = updated_at
             yield record
 
+class AdReportStream(RedditAdsStream):
+    name = "ad_report"
+    path = "/reports"
+    rest_method = "POST"
+    primary_keys = ["account_id", "ad_id", "date"]
+    replication_key = "metrics_updated_at"
+    schema_filepath = SCHEMAS_DIR / "ad_report.json"
+    records_jsonpath = "$.data.metrics[*]"
+
+    def prepare_request_payload(self, context, next_page_token):
+        now = datetime.utcnow().replace(minute=0, second=0, microsecond=0)
+        end_date = now.strftime('%Y-%m-%dT%H:00:00Z')
+
+        # Start from last replicated
+        timestamp = self.get_starting_replication_key_value(context)
+        start_date = normalize_timestamp(timestamp)
+
+        breakdown_columns = ["date","ad_id"]
+        fields = extract_fields_and_metrics(breakdown_columns, self.schema_filepath)
+
+        return {
+            "data": {
+                "breakdowns": breakdown_columns,
+                "fields": fields,
+                "starts_at": start_date,
+                "ends_at": end_date,
+                "time_zone_id": "GMT"
+            }
+        }
+
+    def parse_response(self, response: requests.Response) -> Iterable[dict]:
+        data = response.json().get("data", {})
+        updated_at = data.get("metrics_updated_at")
+
+        for record in data.get("metrics", []):
+            record["metrics_updated_at"] = updated_at
+            yield record
+
 class AdConversionsReportStream(RedditAdsStream):
     """Reddit Ads Conversions Report stream."""
     name = "ad_conversions_report"
     path = "/reports"
-    primary_keys = ["event_name", "account_id", "ad_id", "date"]
+    primary_keys = ["account_id", "ad_id", "date"]
     replication_key = "metrics_updated_at"
     rest_method = "POST"
     schema_filepath = SCHEMAS_DIR / "ad_conversions_report.json"
@@ -123,7 +161,7 @@ class AdConversionsReportStream(RedditAdsStream):
         rounded_hour = now.replace(minute=0, second=0, microsecond=0)
         end_date = rounded_hour.strftime('%Y-%m-%dT%H:00:00Z')
 
-        breakdown_columns = ["event_name", "account_id", "ad_id", "date"]
+        breakdown_columns = ["ad_id", "date"]
 
         fields = extract_fields_and_metrics(breakdown_columns, self.schema_filepath)
         start_date = normalize_timestamp(self.get_starting_replication_key_value(context))
@@ -145,45 +183,6 @@ class AdConversionsReportStream(RedditAdsStream):
         for record in data.get("metrics", []):
             record["metrics_updated_at"] = updated_at
             yield record
-
-class AdReportStream(RedditAdsStream):
-    name = "ad_report"
-    path = "/reports"
-    rest_method = "POST"
-    primary_keys = ["account_id", "ad_id", "date"]
-    replication_key = "metrics_updated_at"
-    schema_filepath = SCHEMAS_DIR / "ad_report.json"
-    records_jsonpath = "$.data.metrics[*]"
-
-    def prepare_request_payload(self, context, next_page_token):
-        now = datetime.utcnow().replace(minute=0, second=0, microsecond=0)
-        end_date = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-
-        # Start from last replicated
-        timestamp = self.get_starting_replication_key_value(context)
-        start_date = normalize_timestamp(timestamp)
-
-        breakdown_columns = ["ad_id", "date"]
-        fields = extract_fields_and_metrics(breakdown_columns, self.schema_filepath)
-
-        return {
-            "data": {
-                "breakdowns": breakdown_columns,
-                "fields": fields,
-                "starts_at": start_date,
-                "ends_at": end_date,
-                "time_zone_id": "GMT"
-            }
-        }
-
-    def parse_response(self, response: requests.Response) -> Iterable[dict]:
-        data = response.json().get("data", {})
-        updated_at = data.get("metrics_updated_at")
-
-        for record in data.get("metrics", []):
-            record["metrics_updated_at"] = updated_at
-            yield record
-
 
 
 class CampaignsStream(RedditAdsStream):

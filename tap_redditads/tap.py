@@ -75,9 +75,9 @@ class TapRedditAds(Tap):
             streams.BusinessAccountStream(self),
             streams.CampaignsStream(self),
             streams.ReportCampaignDateStream(self),
-            # streams.AdConversionsReportStream(self),
+            streams.AdConversionsReportStream(self),
             streams.AdGroupsStream(self),
-            # streams.AdReportStream(self)
+            streams.AdReportStream(self)
         ]
 
 

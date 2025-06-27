@@ -1,13 +1,1135 @@
 {
   "type": "object",
   "properties": {
-    "event_name": { "type": "string" },
-    "account_id": { "type": "string" },
-    "ad_id": { "type": "string" },
-    "date": { "type": "string", "format": "date" },
-    "avg_value": { "type": ["number", "null"] },
-    "campaign_id": { "type": ["string", "null"] },
-    "ad_group_id": { "type": ["string", "null"] },
-    "metrics_updated_at": { "type": "string", "format": "date-time" }
+    "account_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ad_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "conversion_add_to_cart_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_cart_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_cart_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_cart_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_cart_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_cart_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_wishlist_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_wishlist_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_wishlist_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_wishlist_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_wishlist_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_add_to_wishlist_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_lead_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_lead_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_lead_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_lead_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_lead_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_page_visit_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_page_visit_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_page_visit_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_purchase_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_purchase_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_purchase_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_purchase_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_purchase_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_purchase_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_search_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_search_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_search_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_sign_up_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_sign_up_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_sign_up_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_signup_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_signup_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_view_content_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_view_content_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_view_content_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_1_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_1_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_1_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_1_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_1_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_1_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_1_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_2_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_2_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_2_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_2_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_2_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_2_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_2_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_3_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_3_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_3_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_3_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_3_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_3_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_3_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_4_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_4_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_4_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_4_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_4_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_4_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_4_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_5_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_5_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_5_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_5_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_5_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_5_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_5_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_6_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_6_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_6_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_6_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_6_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_6_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_6_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_7_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_7_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_7_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_7_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_7_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_7_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_7_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_8_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_8_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_8_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_8_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_8_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_8_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_8_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_9_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_9_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_9_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_9_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_9_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_9_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_9_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_10_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_10_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_10_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_10_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_10_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_10_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_10_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_11_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_11_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_11_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_11_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_11_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_11_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_11_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_12_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_12_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_12_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_12_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_12_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_12_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_12_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_13_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_13_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_13_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_13_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_13_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_13_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_13_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_14_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_14_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_14_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_14_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_14_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_14_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_14_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_15_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_15_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_15_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_15_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_15_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_15_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_15_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_16_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_16_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_16_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_16_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_16_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_16_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_16_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_17_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_17_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_17_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_17_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_17_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_17_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_17_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_18_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_18_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_18_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_18_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_18_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_18_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_18_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_19_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_19_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_19_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_19_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_19_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_19_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_19_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_20_avg_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_20_clicks": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_20_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_20_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_20_total_items": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_20_total_value": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "conversion_custom_event_20_views": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "view_attribution_window": {
+      "type": ["string", "null"]
+    },
+    "click_attribution_window": {
+      "type": ["string", "null"]
+    },
+    "metrics_updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
   }
 }

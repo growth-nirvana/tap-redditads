@@ -15,298 +15,353 @@
     },
     "date": {
       "type": "string",
-      "format": "date"
-    },
-    "metrics_updated_at": {
-      "type": "string",
       "format": "date-time"
     },
-    "app_install_metrics_add_payment_info": {
+    "app_install_add_payment_info_count": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_add_to_cart": {
+    "app_install_add_payment_info_cvr": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_app_launch": {
+    "app_install_add_payment_info_ecpa": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_completed_tutorial": {
+    "app_install_add_to_cart_count": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_install": {
+    "app_install_add_to_cart_cvr": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_level_achieved": {
+    "app_install_add_to_cart_ecpa": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_purchase": {
+    "app_install_app_launch_count": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_search": {
+    "app_install_app_launch_cvr": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_sign_up": {
+    "app_install_app_launch_ecpa": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_spend": {
+    "app_install_completed_tutorial_count": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_spend_credits": {
+    "app_install_completed_tutorial_cvr": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
-    "app_install_metrics_view_content": {
+    "app_install_completed_tutorial_ecpa": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
+      ]
+    },
+    "app_install_install_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_install_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_install_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_level_achieved_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_level_achieved_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_level_achieved_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_purchase_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_purchase_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_purchase_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_search_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_search_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_search_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_sign_up_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_sign_up_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_sign_up_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_spend_credits_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_spend_credits_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_spend_credits_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_view_content_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_view_content_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_view_content_ecpa": {
+      "type": [
+        "null",
+        "number"
       ]
     },
     "clicks": {
       "type": [
-        "number",
-        "null"
-      ]
-    },
-    "comment_downvotes": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "comment_upvotes": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "comments_page_views": {
-      "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "conversion_roas": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
     "cpc": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
     "ctr": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
     "ecpm": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "number"
       ]
     },
     "gallery_item_caption": {
       "type": [
-        "string",
-        "null"
+        "null",
+        "string"
       ]
     },
     "gallery_item_id": {
       "type": [
-        "string",
-        "null"
+        "null",
+        "string"
       ]
     },
     "impressions": {
       "type": [
-        "number",
-        "null"
-      ]
-    },
-    "legacy_click_conversions_attribution_window_day": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "legacy_click_conversions_attribution_window_month": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "legacy_click_conversions_attribution_window_week": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "legacy_view_conversions_attribution_window_day": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "legacy_view_conversions_attribution_window_month": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "legacy_view_conversions_attribution_window_week": {
-      "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "priority": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "string"
       ]
     },
     "region": {
       "type": [
-        "string",
-        "null"
+        "null",
+        "string"
       ]
     },
     "spend": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_fully_viewable_impressions": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_plays_expanded": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_plays_with_sound": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_started": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_viewable_impressions": {
       "type": [
-        "number",
-        "null"
-      ]
-    },
-    "video_watched_10_seconds": {
-      "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_watched_100_percent": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_10_seconds": {
+      "type": [
+        "null",
+        "integer"
       ]
     },
     "video_watched_25_percent": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_watched_3_seconds": {
       "type": [
-        "number",
-        "null"
-      ]
-    },
-    "video_watched_5_seconds": {
-      "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_watched_50_percent": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_5_seconds": {
+      "type": [
+        "null",
+        "integer"
       ]
     },
     "video_watched_75_percent": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
     "video_watched_95_percent": {
       "type": [
-        "number",
-        "null"
+        "null",
+        "integer"
       ]
     },
-    "viewable_impressions": {
-      "type": [
-        "number",
-        "null"
-      ]
-    },
-    "viewer_comments": {
-      "type": [
-        "number",
-        "null"
-      ]
+    "metrics_updated_at": {
+      "type": "string",
+      "format": "date-time"
     }
-  },
-  "required": [
-    "account_id",
-    "ad_id",
-    "date"
-  ]
+  }
 }
