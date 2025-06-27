@@ -1,0 +1,97 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "account_id": {
+      "type": "string"
+    },
+    "campaign_id": {
+      "type": "string"
+    },
+    "bid_strategy": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bid_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "configured_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effective_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "end_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "modified_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "expand_targeting": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "goal_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "goal_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "is_processing": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "optimization_strategy_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "start_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id",
+    "account_id",
+    "campaign_id"
+  ]
+}

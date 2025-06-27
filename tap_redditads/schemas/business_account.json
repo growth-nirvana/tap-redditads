@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "business_id": {
+      "type": "string"
+    },
+    "time_zone_id": {
+      "type": "string"
+    },
+    "admin_approval": {
+      "type": "boolean"
+    },
+    "attribution_type": {
+      "type": "string"
+    },
+    "click_attribution_window": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "modified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string"
+    },
+    "suspension_reason": {
+      "type": ["string", "null"]
+    },
+    "type": {
+      "type": "string"
+    },
+    "view_attribution_window": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "modified_at"]
+}

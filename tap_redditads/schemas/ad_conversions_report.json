@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "event_name": { "type": "string" },
+    "account_id": { "type": "string" },
+    "ad_id": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "avg_value": { "type": ["number", "null"] },
+    "campaign_id": { "type": ["string", "null"] },
+    "ad_group_id": { "type": ["string", "null"] },
+    "metrics_updated_at": { "type": "string", "format": "date-time" }
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ad_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "metrics_updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "app_install_metrics_add_payment_info": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_add_to_cart": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_app_launch": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_completed_tutorial": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_install": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_level_achieved": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_purchase": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_search": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_sign_up": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_spend": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_spend_credits": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "app_install_metrics_view_content": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "clicks": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "comment_downvotes": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "comment_upvotes": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "comments_page_views": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "conversion_roas": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cpc": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ctr": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ecpm": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "gallery_item_caption": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gallery_item_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "impressions": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "legacy_click_conversions_attribution_window_day": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "legacy_click_conversions_attribution_window_month": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "legacy_click_conversions_attribution_window_week": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "legacy_view_conversions_attribution_window_day": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "legacy_view_conversions_attribution_window_month": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "legacy_view_conversions_attribution_window_week": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "priority": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "region": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "spend": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_fully_viewable_impressions": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_plays_expanded": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_plays_with_sound": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_started": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_viewable_impressions": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_10_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_100_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_25_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_3_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_5_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_50_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_75_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "video_watched_95_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "viewable_impressions": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "viewer_comments": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "account_id",
+    "ad_id",
+    "date"
+  ]
+}
