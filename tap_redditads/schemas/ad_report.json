@@ -1,0 +1,367 @@
+{
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ad_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "app_install_add_payment_info_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_add_payment_info_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_add_payment_info_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_add_to_cart_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_add_to_cart_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_add_to_cart_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_app_launch_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_app_launch_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_app_launch_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_completed_tutorial_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_completed_tutorial_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_completed_tutorial_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_install_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_install_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_install_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_level_achieved_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_level_achieved_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_level_achieved_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_purchase_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_purchase_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_purchase_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_search_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_search_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_search_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_sign_up_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_sign_up_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_sign_up_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_spend_credits_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_spend_credits_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_spend_credits_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_view_content_count": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_view_content_cvr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "app_install_view_content_ecpa": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "clicks": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "conversion_roas": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "cpc": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ctr": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ecpm": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "gallery_item_caption": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "gallery_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "impressions": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "priority": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "region": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "spend": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_fully_viewable_impressions": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_plays_expanded": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_plays_with_sound": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_started": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_viewable_impressions": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_100_percent": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_10_seconds": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_25_percent": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_3_seconds": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_50_percent": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_5_seconds": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_75_percent": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "video_watched_95_percent": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "metrics_updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
